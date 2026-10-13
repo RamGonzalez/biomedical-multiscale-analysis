@@ -1,0 +1,52 @@
+# =============================================================================
+# Config
+#
+# Input paths and analysis parameters. Paths are relative to the Snakefile's directory.
+# =============================================================================
+
+inputs:
+  geno_prefix: "data/ogvp_biomedical"
+  annovar_clean: "data/annotation.tsv"
+  clinvar: "data/clinvar.tsv"
+  genomeasia_index: "data/genomeasia_index.txt"
+  clst_index: "data/clst_index.txt"
+  popinfo: "data/sample_groups.tsv"
+  tuvalu_split: "data/tuvalu_split.popinfo"
+  clinical_allele_sources: "resources/clinical_allele_sources.tsv"
+  gnomad: "data/gnomad.tsv"
+
+params:
+  # ---- Tuvalu split ----
+  tuvalu_split:
+    parent_clst: 11
+    micronesia_label: "Tuvalu_2"
+    micronesia: {name: "Tuvalu Micronesia", clst: 11, group: "Micronesia"}
+    polynesia:  {name: "Tuvalu Polynesia",  clst: 42, group: "Polynesia"}
+
+  # ---- Regions ----
+  region_column: "Group"
+  region_levels:
+    - "Melanesia"
+    - "Micronesia"
+    - "Polynesia"
+    - "SEA"
+    - "Mainland_SEA"
+    - "Taiwan"
+    - "Madagascar"
+  panel_b_order: ["Madagascar", "Mainland_SEA", "Taiwan", "SEA", "Melanesia", "Micronesia", "Polynesia"]
+
+  # ---- Intervals ----
+  ci_method: "jeffreys"
+  ci_level: 0.95
+
+  # ---- Tests and reporting ----
+  p_threshold: 0.001
+  fdr_alpha: 0.05
+  report_require_star: false
+  report_exclude:
+    rs4124874: "Low evidence in ClinPGx"
+  report_scales: ["clst", "group"]
+  report_min_af: 0.1
+
+  # ---- Effect allele ----
+  effect_allele: "hg19_alt"

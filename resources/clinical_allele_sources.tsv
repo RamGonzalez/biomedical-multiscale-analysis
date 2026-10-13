@@ -1,0 +1,20 @@
+rsid	gene	clinical_allele	clinical_allele_source
+rs776746	CYP3A5	C	CPIC: CYP3A5*3 (6981A>G, non-functional); the hg19 reference carries *3
+rs10264272	CYP3A5	T	CPIC: CYP3A5*6 (14685G>A)
+rs4986893	CYP2C19	A	CPIC: CYP2C19*3 (17948G>A, p.W212X)
+rs1057910	CYP2C9	C	CPIC: CYP2C9*3 (42614A>C, p.I359L)
+rs4149056	SLCO1B1	C	CPIC: SLCO1B1*5 (37041T>C, p.V174A)
+rs4148323	UGT1A1	A	CPIC: UGT1A1*6 (211G>A, p.G71R)
+rs35350960	UGT1A1	A	CPIC: UGT1A1*27 (686C>A, p.P229Q)
+rs4803419	CYP2B6	T	Literature (PMC6739160): T allele, higher efavirenz exposure
+rs8192719	CYP2B6	T	Literature (PMC8890732): T allele, higher efavirenz concentration
+rs1042389	CYP2B6	C	Literature (PMC5871545): variant allele, decreased CYP2B6 activity (weaker evidence)
+rs671	ALDH2	A	ClinVar variant definition: c.1510G>A (p.Glu504Lys, ALDH2*2)
+rs116855232	NUDT15	T	ClinVar variant definition: c.415C>T (p.Arg139Cys, NUDT15*3)
+rs16969968	CHRNA5	A	ClinVar variant definition: c.1192G>A (p.Asp398Asn)
+rs1127354	ITPA	A	ClinVar variant definition: c.94C>A (p.Pro32Thr)
+rs8099917	IFNL3	G	ClinVar variant definition: g.39252525T>G (GRCh37)
+rs12777823	CYP2C19	A	ClinVar variant definition: g.94645745G>A (GRCh37)
+rs1800629	TNF	A	ClinVar variant definition: c.-488G>A
+rs1042713	ADRB2	A	ClinVar variant definition: c.46G>A (p.Gly16Arg)
+rs4673993	ATIC	C	ClinVar variant definition: c.1503+675T>C
